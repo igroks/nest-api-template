@@ -3,6 +3,7 @@ import { ConfigService } from '@nestjs/config';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { SwaggerConfig } from './core/config/swagger/swagger.config';
+import { DefaultExceptionFilter } from './core/filters/default-exception.filter';
 import { HttpExceptionFilter } from './core/filters/http-exception.filter';
 import { App } from './core/interfaces/config.interface';
 
@@ -18,7 +19,7 @@ async function bootstrap() {
     }),
   );
 
-  app.useGlobalFilters(new HttpExceptionFilter());
+  app.useGlobalFilters(new DefaultExceptionFilter(), new HttpExceptionFilter());
 
   await app.listen(port);
 }
