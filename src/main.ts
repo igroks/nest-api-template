@@ -3,7 +3,7 @@ import { ConfigService } from '@nestjs/config';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { SwaggerConfig } from './core/config/swagger/swagger.config';
-import { HttpExceptionFilter } from './core/filters/http-exceptions.filter';
+import { HttpExceptionFilter } from './core/filters/http-exception.filter';
 import { App } from './core/interfaces/config.interface';
 
 async function bootstrap() {
