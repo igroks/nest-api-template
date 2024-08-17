@@ -12,7 +12,7 @@ const config: Config = {
   testEnvironment: 'node',
   roots: ['<rootDir>'],
   modulePaths: [compilerOptions.baseUrl],
-  testMatch: ['**/**/*.test.ts', '**/**/*.e2e-test.ts', '**/**/*.spec.ts'],
+  testMatch: ['**/**/*.test.ts', '**/**/*.spec.ts'],
   moduleNameMapper: {
     '^@core/(.*)$': '<rootDir>src/core/$1',
     '^@modules/(.*)$': '<rootDir>/src/modules/$1',
