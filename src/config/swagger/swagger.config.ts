@@ -1,7 +1,7 @@
+import { App } from '@core/interfaces';
 import { INestApplication } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
-import { App } from 'src/core/interfaces/config.interface';
 
 export class SwaggerConfig {
   static init(app: INestApplication) {

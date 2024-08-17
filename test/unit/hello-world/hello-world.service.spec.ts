@@ -1,5 +1,5 @@
+import { HelloWorldService } from '@modules/hello-world';
 import { Test, TestingModule } from '@nestjs/testing';
-import { HelloWorldService } from '../../../src/hello-world/hello-world.service';
 
 describe('HelloWorldService', () => {
   let service: HelloWorldService;

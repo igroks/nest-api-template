@@ -1,4 +1,4 @@
-import { NodeEnv } from '../enums/node-env.enum';
+import { NodeEnv } from '@core/enums';
 
 export interface Company {
   website: string;

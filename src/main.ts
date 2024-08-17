@@ -1,11 +1,10 @@
+import { SwaggerConfig } from '@config/swagger';
+import { DefaultExceptionFilter, HttpExceptionFilter } from '@core/filters';
+import { App } from '@core/interfaces';
 import { ValidationPipe } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
-import { SwaggerConfig } from './core/config/swagger/swagger.config';
-import { DefaultExceptionFilter } from './core/filters/default-exception.filter';
-import { HttpExceptionFilter } from './core/filters/http-exception.filter';
-import { App } from './core/interfaces/config.interface';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);

@@ -13,6 +13,11 @@ const config: Config = {
   roots: ['<rootDir>'],
   modulePaths: [compilerOptions.baseUrl],
   testMatch: ['**/**/*.test.ts', '**/**/*.e2e-test.ts', '**/**/*.spec.ts'],
+  moduleNameMapper: {
+    '^@core/(.*)$': '<rootDir>src/core/$1',
+    '^@modules/(.*)$': '<rootDir>/src/modules/$1',
+    '^@config/(.*)$': '<rootDir>/src/config/$1',
+  },
   coverageThreshold: {
     global: {
       branches: 80,

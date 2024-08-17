@@ -1,11 +1,11 @@
+import { configOptions } from '@config/config.options';
+import { NodeEnv } from '@core/enums';
+import { App } from '@core/interfaces';
+import { LoggerMiddleware } from '@core/middlewares';
+import { LoggerService } from '@core/services';
+import { HelloWorldModule } from '@modules/hello-world';
 import { MiddlewareConsumer, Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { configOptions } from './core/config/config.options';
-import { NodeEnv } from './core/enums/node-env.enum';
-import { App } from './core/interfaces/config.interface';
-import { LoggerMiddleware } from './core/middlewares/logger.middleware';
-import { LoggerService } from './core/services/logger.service';
-import { HelloWorldModule } from './hello-world/hello-world.module';
 
 @Module({
   imports: [ConfigModule.forRoot(configOptions), HelloWorldModule],

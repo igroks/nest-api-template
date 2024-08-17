@@ -1,6 +1,6 @@
+import { NodeEnv } from '@core/enums';
 import { plainToInstance } from 'class-transformer';
 import { IsNotEmpty, IsNumber, IsOptional, validateSync } from 'class-validator';
-import { NodeEnv } from 'src/core/enums/node-env.enum';
 
 class EnvironmentVariables {
   @IsNumber()

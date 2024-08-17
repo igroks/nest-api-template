@@ -1,6 +1,6 @@
+import { Log } from '@core/interfaces';
 import { Injectable, Logger } from '@nestjs/common';
 import chalk from 'chalk';
-import { Log } from '../interfaces/log.interface';
 
 @Injectable()
 export class LoggerService {
